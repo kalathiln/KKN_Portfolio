@@ -38,6 +38,36 @@ body {
     font-family: monospace;
 }
 
+.main{
+    margin: 0 auto;
+}
 .main--aboutme{
     margin: 6rem;
+    padding: 0 1rem;
+    line-height: 150%;
+    font-size: 120%;
+    text-align: justify;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.contact__details{
+    margin-left: 1ch;
+}
+
+.contact__link{
+    text-decoration: none;
+    box-shadow: 0 3px 0 0 rgb(2, 39, 26) ;
+    color: rgb(4, 59, 41);
+}
+
+.contact__link:hover{
+    color: rgb(11, 39, 100) ;
 }
