@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Qwitcher Grypen', sans-serif;
+    font-size: xx-large;
+}
+
+body {
+    margin-top: 80px;
+}
+
+.header {
+    text-align: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: rgb(12, 210, 232);
+}
+
+.nav {
+    margin-bottom: 2.3rem;
+    font-size: xx-large;
+}
+
+.nav__link:not(:last-of-type){
+    margin-right: 3rem;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    font-weight: bold;
+    font: bold;
+    font-family: monospace;
+}
+
+.main--aboutme{
+    margin: 6rem;
+}
