@@ -49,6 +49,12 @@ body {
     text-align: justify;
 }
 
+.main--aboutme__article{
+    font-family: monospace;
+    font-size: large;
+    line-height: 1rem;
+}
+
 .contact{
     /* display: flex; */
     display: grid;
