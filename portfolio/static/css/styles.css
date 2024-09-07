@@ -92,10 +92,10 @@ body {
     }
 }
 
-@media(min-width : 70em){
+@media(min-width : 80em){
     .projects{
         grid-template-columns: repeat(3, 1fr);
-        max-width: 68rem;
+        max-width: 80rem;
     }
 }
 
