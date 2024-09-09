@@ -48,7 +48,7 @@ body {
     margin: 0 auto;
 }
 
-.main--aboutme {
+.main--aboutme, .main--error {
     display: flex;
     margin: 2rem;
     padding: 0 1rem;
@@ -342,3 +342,6 @@ body {
     font-size: small;
     line-height: 1rem;
 }
+
+/* for error handler page */
+

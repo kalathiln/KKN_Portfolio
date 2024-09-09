@@ -43,7 +43,7 @@ projects = [
         "hero": "",
         "categories":["K&K", "Ganesha", "Psylosophy"],
         "slug": "myshop",
-        "prod": "https://www.redbubble.com/de/shop/ap/162571374?asc=u",
+        "prod": "https://www.redbubble.com/de/people/KremserKalathil/shop?asc=u",
     }
 
     
@@ -76,5 +76,9 @@ def create_app():
         # return render_template("project_"+slug+".html")
         return render_template(f"{slug}.html",
                                project=slug_to_project[slug])
+    
+    @app.errorhandler(404)
+    def page_not_found(error):
+        return render_template("404.html") , 404
         
     return app
