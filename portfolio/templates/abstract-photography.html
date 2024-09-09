@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
+<section class="main project__heading--main">
+    <h2 class="project__heading">{{ project['name'] }}</h2>
+</section>
 <section class="main main--abstract-photography">
     <div class="img__gallery img__gallery__large">
         <a href="{{ url_for('static', filename='/img/abstract_photography/brugge_canals.jpg') }}"
@@ -62,8 +65,8 @@
     <div class="img__gallery img__gallery__vertical">
         <a href="{{ url_for('static', filename='/img/abstract_photography/peace_on_the_east.jpg') }}"
             data-lightbox="abstract_photography" data-title="Peace to the East.">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/peace_on_the_east.jpg') }}" alt="">
         </a>
-        <img src="{{ url_for('static', filename='/img/abstract_photography/peace_on_the_east.jpg') }}" alt="">
     </div>
 
     <div class="img__gallery img__gallery__large">

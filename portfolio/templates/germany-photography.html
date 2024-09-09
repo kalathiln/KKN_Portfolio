@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
+<section class="main project__heading--main">
+    <h2 class="project__heading">{{ project['name'] }}</h2>
+</section>
 <section class="main main--germany-photography">
     <div class="img__gallery img__gallery__large">
         <a href="{{ url_for('static', filename='/img/germany_photography/ber1.jpg') }}" data-lightbox="germany_photography"

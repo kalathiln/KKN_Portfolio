@@ -11,9 +11,9 @@ html {
 
 body {
     margin-top: 80px;
-    /* background-image: linear-gradient(to bottom right, #f2f3f9, #181506); */
+    background-image: linear-gradient(to bottom right, #f2f3f9, #ffffff);
     /* background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%); */
-    background-image: linear-gradient( 135deg, #636363 10%, #a2ab58 100%);
+    /* background-image: linear-gradient( 135deg, #636363 10%, #a2ab58 100%); */
 }
 
 .header {
@@ -42,15 +42,22 @@ body {
 }
 
 .main {
+    
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 
 .main--aboutme {
-    margin: 6rem;
+    display: flex;
+    margin: 2rem;
     padding: 0 1rem;
     line-height: 150%;
     font-size: 120%;
     text-align: justify;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .main--aboutme__article {
@@ -233,4 +240,105 @@ body {
 .img__gallery__large {
     grid-row: span 2;
     grid-column: span 2;
+}
+
+/* Styling For Technical projects */
+
+.hero {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    max-width: 50rem;
+    padding: 0 1rem;
+  }
+  
+  .project__content {
+    margin-bottom: 1rem;
+    line-height: 150%;
+  }
+  
+  @media (min-width: 48.75em) {
+    .project {
+      flex-direction: row;
+      padding: 0;
+    }
+  
+    .project__content {
+      flex: 7;
+      margin-right: 3rem;
+      padding: 0;
+    }
+  }
+  
+  .project__heading {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+  }
+  
+  .project__heading--meta {
+    font-size: inherit;
+    margin-bottom: 1rem;
+  }
+  
+  .project__meta-group {
+    margin-bottom: 1rem;
+  }
+  
+  .project__meta-group,
+  .cta {
+    padding: 1rem;
+    background-color: #d4eafa;
+    border-radius: 6px;
+  }
+  
+  .cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #1c2023;
+    text-decoration: none;
+  }
+  
+  .cta:hover {
+    text-decoration: underline;
+  }
+  
+  .cta__icon {
+    margin-right: 0.5rem;
+    transform: translateY(1px);
+  }
+  
+  .technology-list {
+    list-style: none;
+    padding-left: 0.75rem;
+    margin: 0;
+    line-height: 1.75;
+  }
+  
+  .technology-list__item:before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background-image: url("/static/img/svg/list-check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+  
+    /* necessary for vertical centering */
+    transform: translateY(0.36rem);
+}
+
+.main--project{
+    font-family: monospace;
+    font-size: small;
+    line-height: 1rem;
 }

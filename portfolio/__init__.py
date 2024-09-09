@@ -30,10 +30,18 @@ projects = [
         "prod": "https://udemy.com",
     },
     {
+        "name" : "Technology",
+        "thumb": "/img/projects_main_thumb.png",
+        "hero": "img/svg/habit-tracking-hero.png",
+        "categories":["Programming", "Tech", "Apps"],
+        "slug": "tech_projects",
+        "prod": "https://github.com/kalathiln",
+    },
+    {
         "name" : "Shop",
         "thumb": "/img/giraffe_small.png",
         "hero": "",
-        "categories":["K&K", "Ganesha", "Psylosphy"],
+        "categories":["K&K", "Ganesha", "Psylosophy"],
         "slug": "myshop",
         "prod": "https://www.redbubble.com/de/shop/ap/162571374?asc=u",
     }
