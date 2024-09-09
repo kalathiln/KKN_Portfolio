@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="main main--abstract-photography">
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/brugge_canals.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Brugge Canals - Venice of the West">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/brugge_canals.jpg') }}" alt="">
+        </a>
+
+    </div>
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/one_step_a_time.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Just One step at a time. | Library | Milan | Italy">
+        </a>
+        <img src="{{ url_for('static', filename='/img/abstract_photography/one_step_a_time.jpg') }}" alt="">
+    </div>
+
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/winter_canal_brugge.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Winter in Brugge, Belgium">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/winter_canal_brugge.jpg') }}" alt="">
+        </a>
+    </div>
+
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}"
+            data-lightbox="abstract_photography" data-title="A Crow enjoying the sunset. Pondicherry | India">
+            <img src="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}" alt="">
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

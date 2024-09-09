@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.css')}}"/>
 
 </head>
 <body>
@@ -30,5 +31,7 @@
     {% block content %}
 
     {% endblock %}
+    
+    <script src="{{ url_for('static', filename='/js/lightbox-plus-jquery.min.js') }}"></script    
 </body>
 </html>
