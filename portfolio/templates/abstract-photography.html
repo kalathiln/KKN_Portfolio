@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="main project__heading--main">
+    <h2 class="project__heading">{{ project['name'] }}</h2>
+</section>
+<section class="main main--abstract-photography">
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/brugge_canals.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Brugge Canals - Venice of the West">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/brugge_canals.jpg') }}" alt="">
+        </a>
+
+    </div>
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/one_step_a_time.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Just One step at a time. | Library | Milan | Italy">
+        </a>
+        <img src="{{ url_for('static', filename='/img/abstract_photography/one_step_a_time.jpg') }}" alt="">
+    </div>
+
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/winter_canal_brugge.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Winter in Brugge, Belgium">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/winter_canal_brugge.jpg') }}" alt="">
+        </a>
+    </div>
+
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}"
+            data-lightbox="abstract_photography" data-title="A Crow enjoying the sunset. Pondicherry | India">
+            <img src="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}" alt="">
+        </a>
+
+    </div>
+
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/abstract_home_and_away.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Home and Away!">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/abstract_home_and_away.jpg') }}" alt="">
+        </a>
+
+    </div>
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/good_ol_days.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Good Ol Days.">
+        </a>
+        <img src="{{ url_for('static', filename='/img/abstract_photography/good_ol_days.jpg') }}" alt="">
+    </div>
+
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/Milan_tram_shot.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Milan tram shot, Italy">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/Milan_tram_shot.jpg') }}" alt="">
+        </a>
+    </div>
+
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/music_concert_darmstadt.jpg') }}"
+            data-lightbox="abstract_photography" data-title="A Crow enjoying the sunset. Pondicherry | India">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/music_concert_darmstadt.jpg') }}" alt="">
+        </a>
+
+    </div>
+
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/peace_on_the_east.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Peace to the East.">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/peace_on_the_east.jpg') }}" alt="">
+        </a>
+    </div>
+
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/pirates_lighter_shot.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Lighter blazing away. Hostle time, Darmstadt">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/pirates_lighter_shot.jpg') }}" alt="">
+        </a>
+    </div>
+
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/abstract_photography/rainy_cyclist_bnw.jpg') }}"
+            data-lightbox="abstract_photography" data-title="Rainy Cyclist | Belgium">
+            <img src="{{ url_for('static', filename='/img/abstract_photography/rainy_cyclist_bnw.jpg') }}" alt="">
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

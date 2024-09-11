@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="main project__heading--main">
+    <h2 class="project__heading">{{ project['name'] }}</h2>
+</section>
+<section class="main main--india-photography">
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/india_photography/nandi_temple2.jpg') }}"
+            data-lightbox="india_photography"
+            data-title="BhogaNandeeshwara Temple - Chikkaballapura | Karnataka | India">
+            <img src="{{ url_for('static', filename='/img/india_photography/nandi_temple2.jpg') }}" alt="">
+        </a>
+    </div>
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/india_photography/Peace_buddha.jpg') }}"
+            data-lightbox="india_photography" data-title="Peace is from within - Eindhoven | Netherlands">
+            <img src="{{ url_for('static', filename='/img/india_photography/Peace_buddha.jpg') }}" alt="">
+        </a>
+    </div>
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}"
+            data-lightbox="india_photography" data-title="Fishing boat - Pondicherry | Tamil Nadu | India">
+            <img src="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}" alt="">
+        </a>
+    </div>
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/india_photography/Peace_buddha.jpg') }}"
+            data-lightbox="india_photography" data-title="Peace is from within - Eindhoven | Netherlands">
+            <img src="{{ url_for('static', filename='/img/india_photography/Peace_buddha.jpg') }}" alt="">
+        </a>
+    </div>
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/india_photography/nandi_temple2.jpg') }}"
+            data-lightbox="india_photography"
+            data-title="BhogaNandeeshwara Temple - Chikkaballapura | Karnataka | India">
+            <img src="{{ url_for('static', filename='/img/india_photography/nandi_temple2.jpg') }}" alt="">
+        </a>
+    </div>
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}"
+            data-lightbox="india_photography" data-title="Fishing boat - Pondicherry | Tamil Nadu | India">
+            <img src="{{ url_for('static', filename='/img/india_photography/pondi_crow.jpg') }}" alt="">
+        </a>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="main project__heading--main">
+    <h2 class="project__heading">{{ project['name'] }}</h2>
+</section>
+<section class="main main--germany-photography">
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/germany_photography/ber1.jpg') }}" data-lightbox="germany_photography"
+            data-title="East Side Gallery - Berlin | Deutschland"><img src="{{ url_for('static', filename='/img/germany_photography/ber1.jpg') }}"
+                alt="">Image #1</a>
+    </div>
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/germany_photography/ber2.jpg') }}" data-lightbox="germany_photography"
+            data-title="East Side Galler - Berlin | Deutschland"><img src="{{ url_for('static', filename='/img/germany_photography/ber2.jpg') }}"
+                alt="">Image #1</a>
+    </div>
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/germany_photography/ber3.jpg') }}" data-lightbox="germany_photography"
+            data-title="People of Berlin."><img src="{{ url_for('static', filename='/img/germany_photography/ber3.jpg') }}"
+                alt=""> Image #1</a>
+    </div>
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/germany_photography/ger1.jpg') }}" data-lightbox="germany_photography"
+            data-title="My caption"><img src="{{ url_for('static', filename='/img/germany_photography/ger1.jpg') }}"
+                alt="">Image #1</a>
+    </div>
+    <div class="img__gallery img__gallery__vertical">
+        <a href="{{ url_for('static', filename='/img/germany_photography/ger2.jpg') }}" data-lightbox="germany_photography"
+            data-title="My caption"><img src="{{ url_for('static', filename='/img/germany_photography/ger2.jpg') }}"
+                alt="">Image #1</a>
+    </div>
+    <div class="img__gallery img__gallery__horizontal">
+        <a href="{{ url_for('static', filename='/img/germany_photography/ger3.jpg') }}" data-lightbox="germany_photography"
+            data-title="My caption"><img src="{{ url_for('static', filename='/img/germany_photography/ger3.jpg') }}"
+                alt="">Image #1</a>
+    </div>
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/germany_photography/ber4.jpg') }}" data-lightbox="germany_photography"
+            data-title="My caption"><img src="{{ url_for('static', filename='/img/germany_photography/ber4.jpg') }}"
+                alt="">Image #1</a>
+    </div>
+    <div class="img__gallery img__gallery__large">
+        <a href="{{ url_for('static', filename='/img/germany_photography/langen.jpg') }}" data-lightbox="germany_photography"
+            data-title="Langen"><img src="{{ url_for('static', filename='/img/germany_photography/langen.jpg') }}"
+                alt="">Image #1</a>
+    </div>
+</section>
+{% endblock %}
