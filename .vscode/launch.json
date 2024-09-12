@@ -5,14 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         
+
+        
         {
-            "name": "Python Debugger: Flask",
-            "type": "debugpy",
+            "name": "Python: Flask",
+            "type": "python",
             "request": "launch",
             "module": "flask",
             "env": {
                 "FLASK_APP": "portfolio/__init__.py",
-                "FLASK_DEBUG": "1"
+                "FLASK_DEBUG": "1",
+                "FLASK_ENV": "development"
             },
             "args": [
                 "run",
